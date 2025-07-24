@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equanimity App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Equanimity</a>
+            <ul class="nav-links">
+                <li><a href="#Portfolio" class="nav-link active" data-tab="portfolio">Portfolio</a></li>
+                <li><a href="#stuffs" class="nav-link" data-tab="stuffs">Stuffs</a></li>
+                <li><a href="#about" class="nav-link" data-tab="about">About</a></li>
+                <li><a href="#contact" class="nav-link" data-tab="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div id="portfolio" class="tab-content active">
+            <h1>Welcome to Equanimity</h1>
+            <p>This is the home section.</p>
+        </div>
+        <div id="stuffs" class="tab-content">
+            <h1>Our Stuffs</h1>
+            <p>This is the stuffs section.</p>
+        </div>
+        <div id="about" class="tab-content">
+            <h1>About Us</h1>
+            <p>This is the about section.</p>
+        </div>
+        <div id="contact" class="tab-content">
+            <h1>Contact Us</h1>
+            <p>This is the contact section.</p>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
